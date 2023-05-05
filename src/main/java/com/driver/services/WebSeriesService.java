@@ -48,7 +48,7 @@ public class WebSeriesService {
         }
         productionHouse.setRatings(currentRating/totalWebSeries);
 
-        productionHouseRepository.save(productionHouse);
+    //    productionHouseRepository.save(productionHouse);
         WebSeries savedWebseries = webSeriesRepository.save(webSeries);
         return savedWebseries.getId();
     }
