@@ -50,6 +50,7 @@ public class SubscriptionService {
         user.setSubscription(subscription);
 
         userRepository.save(user);
+        subscriptionRepository.save(subscription);
 
         return subscription.getTotalAmountPaid();
     }
